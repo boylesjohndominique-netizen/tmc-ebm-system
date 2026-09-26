@@ -1,0 +1,32 @@
+# Laravel environment
+tmc-equipment-system/backend/.env
+
+# Laravel generated/runtime files
+tmc-equipment-system/backend/storage/*
+tmc-equipment-system/backend/bootstrap/cache/*
+
+# Keep required Laravel placeholder files
+!tmc-equipment-system/backend/storage/
+!tmc-equipment-system/backend/storage/framework/
+!tmc-equipment-system/backend/storage/framework/cache/
+!tmc-equipment-system/backend/storage/framework/sessions/
+!tmc-equipment-system/backend/storage/framework/views/
+!tmc-equipment-system/backend/storage/logs/
+
+# Flutter generated files
+tmcebms/.dart_tool/
+tmcebms/build/
+tmcebms/.flutter-plugins
+tmcebms/.flutter-plugins-dependencies
+tmcebms/.packages
+
+# Laravel runtime files
+tmc-equipment-system/backend/storage/
+tmc-equipment-system/backend/bootstrap/cache/
+
+# Laravel environment
+tmc-equipment-system/backend/.env
+
+# Flutter generated files
+tmcebms/.dart_tool/
+tmcebms/build/
