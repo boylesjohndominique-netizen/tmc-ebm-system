@@ -1,0 +1,24 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "tmcebms/AGENTS.md",
+    "tmc-ebm-system-web/AGENTS.md"
+  ],
+  "watcher": {
+    "ignore": [
+      "**/node_modules/**",
+      "**/vendor/**",
+      "**/.dart_tool/**",
+      "**/.git/**",
+      "**/build/**",
+      "**/dist/**",
+      "**/storage/**",
+      "**/bootstrap/cache/**",
+      "**/__pycache__/**"
+    ]
+  },
+  "tool_output": {
+    "max_lines": 600,
+    "max_bytes": 32768
+  }
+}

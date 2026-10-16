@@ -1,32 +1,60 @@
-# Laravel environment
-tmc-equipment-system/backend/.env
+# ---------------------------------------------------------------------------
+# Root workspace. Each submodule has its own .gitignore for its own tree;
+# these rules keep the parent repo clean and help search tools skip noise.
+# ---------------------------------------------------------------------------
 
-# Laravel generated/runtime files
-tmc-equipment-system/backend/storage/*
-tmc-equipment-system/backend/bootstrap/cache/*
+# Environment & secrets
+.env
+.env.*
+!.env.example
+*.local
 
-# Keep required Laravel placeholder files
-!tmc-equipment-system/backend/storage/
-!tmc-equipment-system/backend/storage/framework/
-!tmc-equipment-system/backend/storage/framework/cache/
-!tmc-equipment-system/backend/storage/framework/sessions/
-!tmc-equipment-system/backend/storage/framework/views/
-!tmc-equipment-system/backend/storage/logs/
+# OS / IDE metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+*.swp
 
-# Flutter generated files
+# Logs & temp
+*.log
+*.tmp
+.vite/
+
+# Tool metadata
+.freebuff/
+
+# ---------------------------------------------------------------------------
+# Flutter / Dart (tmcebms/)
+# ---------------------------------------------------------------------------
 tmcebms/.dart_tool/
-tmcebms/build/
 tmcebms/.flutter-plugins
 tmcebms/.flutter-plugins-dependencies
 tmcebms/.packages
-
-# Laravel runtime files
-tmc-equipment-system/backend/storage/
-tmc-equipment-system/backend/bootstrap/cache/
-
-# Laravel environment
-tmc-equipment-system/backend/.env
-
-# Flutter generated files
-tmcebms/.dart_tool/
 tmcebms/build/
+tmcebms/ios/Pods/
+tmcebms/ios/.symlinks/
+tmcebms/android/.gradle/
+tmcebms/android/local.properties
+
+# ---------------------------------------------------------------------------
+# Laravel / PHP (tmc-ebm-system-web/backend/)
+# ---------------------------------------------------------------------------
+tmc-ebm-system-web/backend/.env
+tmc-ebm-system-web/backend/vendor/
+tmc-ebm-system-web/backend/storage/**/*
+!tmc-ebm-system-web/backend/storage/**/
+!tmc-ebm-system-web/backend/storage/**/.gitignore
+!tmc-ebm-system-web/backend/storage/**/.gitkeep
+tmc-ebm-system-web/backend/bootstrap/cache/*
+!tmc-ebm-system-web/backend/bootstrap/cache/.gitignore
+
+# ---------------------------------------------------------------------------
+# React / Node (tmc-ebm-system-web/frontend/)
+# ---------------------------------------------------------------------------
+tmc-ebm-system-web/frontend/node_modules/
+tmc-ebm-system-web/frontend/dist/
+tmc-ebm-system-web/frontend/build/
+tmc-ebm-system-web/frontend/.vite/
+tmc-ebm-system-web/frontend/.env
