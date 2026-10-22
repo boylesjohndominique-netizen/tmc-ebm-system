@@ -21,6 +21,7 @@ Thumbs.db
 *.log
 *.tmp
 .vite/
+online-url.txt
 
 # Tool metadata
 .freebuff/
